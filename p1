@@ -1,0 +1,31 @@
+# **COMANDOS GITHUB 1** *(repositorios)*
+
+
+1.Añadir repositorio remoto
+> `git remote add origin url`
+
+2.Ver repositorios remotos
+> `git remote -v`
+
+3.Eliminar repositorio remoto
+> `git remote rm origin`
+
+4.Añadir cambios del repositorio local al remoto
+> `git push -u origin master`
+
+5.Añadir cambios del repositorio remoto al local
+> `git pull`
+
+# **COMANDOS GITHUB 2** *(ramas)*
+
+6.Ver branches remotos
+> `git branch -r`
+
+7.Ver todos los braches
+> `git branch -a`
+
+8.Clonar un repositorio remoto
+> `git clone url`
+
+##DAR SEGUIMIENTO DE BRANCHES REMOTOS
+####LOCAL -> REMOTO
