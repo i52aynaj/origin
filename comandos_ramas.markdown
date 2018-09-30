@@ -47,3 +47,29 @@ Es la forma para separar la línea actual de desarrollo con respecto a la princi
 ### Resolver conflictos (se suele hacer manualmente):
 
 > `git merge --abort`
+
+## Comandos Ramas III
+
+### Almacenar cambios temporales:
+
+> `git stash save \"Mensaje\"`
+
+### Listar cambios:
+
+> `git stash list`
+
+### Ver contenido de un cambios temporal:
+
+> `git stash show -p nombre\_stash`
+
+### Eliminar un cambio temporal:
+
+> `git stash drop nombre\_stash`
+
+### Aplicar cambio del stash:
+
+> `git stash apply nombre\_stash`
+
+> `git stash pop nombre\_stash`
+
+
