@@ -27,8 +27,10 @@
 8.Clonar un repositorio remoto
 > `git clone url`
 
-##DAR SEGUIMIENTO DE BRANCHES REMOTOS
-####LOCAL -> REMOTO
+## DAR SEGUIMIENTO DE BRANCHES REMOTOS
+
+#### LOCAL -> REMOTO
+
 1.Cambios en el repositorio local
 
 2.Commit de los cambios
@@ -36,7 +38,8 @@
 3.Añadir cambios al repositorio remoto:
 > `git push`
 
-####REMOTO->LOCAL
+#### REMOTO->LOCAL
+
 1.Sincronización y unión
 
 > `git fech origin`
@@ -46,8 +49,10 @@
 2.En un solo paso
 > `git pull
 
-##OPERACIÓN CON BRANCHES REMOTOS
-####CREACIÓN
+## OPERACIÓN CON BRANCHES REMOTOS
+
+#### CREACIÓN
+
 1.Crear branch local
 
 2.Hacer cambios en dicho branch
@@ -57,9 +62,11 @@
 4.Copiar el branch al repositorio remoto
 > `git push -u origin branch_remoto
 
-####COPIA
+#### COPIA
+
 > `git checkout -b local remoto`
 
-####ELIMINACIÓN
+#### ELIMINACIÓN
+
 > `git push origin --delete branch_remoto
 
