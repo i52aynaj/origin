@@ -1,0 +1,44 @@
+###PARTES INTERESADAS###
+
+Profesores y alumnos de la asignatura de Ingeniería de Software.
+
+###DATOS A ALMACENAR###
+
+####Alumno####
+
+>
+  * DNI
+  * Nombre
+  * Apellidos
+  * Fecha de nacimiento
+  * Teléfono
+  * Email Corporativo
+  * Dirección
+  * Curso más alto matriculado
+  * Equipo
+  * Lider (Sí/No)
+
+###REQUISITOS FUNCIONALES (por orden de prioridad).###
+
+>
+1. Añadir alumnos.
+2. Buscar alumnos por nombre o por DNI.
+3. Mostrar Alumnos.
+4. Modificar alumnos.
+5. Eliminar alumnos.
+6. Guardar ficheros.
+7. Cargar ficheros.
+8. Búsqueda de equipo para mostrar integrantes.
+
+REQUISITOS NO FUNCIONALES
+
+>
+1. Máximo de alumnos debe ser 150.
+2. El lenguaje debe ser C/C++
+3. Herramienta de documentación Markdown
+4. Un mismo equipo no puede tener más de un líder.
+5. El sistema debe funcionar en plataformas Linux como mínimo.
+6. El software debe ser lo más simple posible.
+7. El software debe ser estructurado.
+8. El interfaz será la línea de comandos.
+
