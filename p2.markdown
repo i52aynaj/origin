@@ -1,10 +1,10 @@
-###PARTES INTERESADAS###
+### PARTES INTERESADAS
 
 Profesores y alumnos de la asignatura de Ingeniería de Software.
 
-###DATOS A ALMACENAR###
+### DATOS A ALMACENAR
 
-####Alumno####
+#### Alumno
 
 >
   * DNI
@@ -18,7 +18,7 @@ Profesores y alumnos de la asignatura de Ingeniería de Software.
   * Equipo
   * Lider (Sí/No)
 
-###REQUISITOS FUNCIONALES (por orden de prioridad).###
+### REQUISITOS FUNCIONALES (por orden de prioridad).
 
 >
 1. Añadir alumnos.
@@ -30,7 +30,7 @@ Profesores y alumnos de la asignatura de Ingeniería de Software.
 7. Cargar ficheros.
 8. Búsqueda de equipo para mostrar integrantes.
 
-REQUISITOS NO FUNCIONALES
+### REQUISITOS NO FUNCIONALES
 
 >
 1. Máximo de alumnos debe ser 150.
