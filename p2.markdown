@@ -44,7 +44,7 @@ Profesores y alumnos de la asignatura de Ingeniería de Software.
 
 ### HISTORIAS DE USUARIO
 
-####(ANVERSO)
+#### (ANVERSO)
 
 **ID**: 01 **Añadir alumno**
 
