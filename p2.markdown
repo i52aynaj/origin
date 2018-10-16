@@ -53,7 +53,7 @@ Como usuario quiero poder añadir alumnos a la base de datos para guardar su inf
 **Prioridad**:1
 
 
-####\(REVERSO\)
+(####REVERSO)
 
 >
 * Quiero poder añadir un alumno introduciendo su DNI, nombre, apellidos, fecha de nacimiento, teléfono, email corporativo, dirección y curso más alto.
