@@ -28,6 +28,7 @@
 > `git clone url`
 
 ##DAR SEGUIMIENTO DE BRANCHES REMOTOS
+
 ####LOCAL -> REMOTO
 1.Cambios en el repositorio local
 
@@ -47,6 +48,7 @@
 > `git pull
 
 ##OPERACIÓN CON BRANCHES REMOTOS
+
 ####CREACIÓN
 1.Crear branch local
 
