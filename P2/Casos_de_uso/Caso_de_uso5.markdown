@@ -26,5 +26,5 @@
 
 **Flujos alternativos**:
 
-1. Si no existe el alumno, el sistema muestra un mensaje de error.
-2. Si el DNI no es único, el sistema mostrará un mensaje de error.
+1. Si no existe el alumno, el sistema muestra un mensaje de error y volverá a pedir los datos para buscar al alumno.
+2. Si el DNI no es único, el sistema mostrará un mensaje de error y volverá a pedir los datos para modificar al alumno.

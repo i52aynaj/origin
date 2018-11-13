@@ -11,4 +11,5 @@ Como usuario deseo tener la posibilidad de eliminar un alumno para eliminar alum
 
 >
 * Eliminar un alumno no tiene impacto en la información del resto de alumnos.
+* El alumno a eliminar se podrá buscar por DNI o por apellido y equipo(mínimo).
 

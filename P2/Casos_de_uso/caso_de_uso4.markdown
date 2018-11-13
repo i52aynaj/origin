@@ -21,9 +21,10 @@
 
 **Postcondiciones**:
 
-* El sistema muestra el alumno por pantalla.
+* El sistema muestra el alumno en línea de comandos o en un fichero Markdown/HTML.
 
 **Flujos alternativos**:
 
-1. Si no existe el alumno, el sistema muestra un mensaje de error.
+1. Si no existe el alumno, el sistema muestra un mensaje de error y volverá a pedir los datos para buscar el alumno.
+2. Si existen dos alumnos con los apellidos, el sistema pedirá el DNI para diferenciarlos.
 

@@ -25,5 +25,5 @@
 
 **Flujos alternativos**:
 
-1. Si no existe el equipo, el sistema muestra un mensaje de error.
+1. Si no existe el equipo, el sistema muestra un mensaje de error y volverá a pedir el número de equipo.
 

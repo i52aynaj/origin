@@ -30,6 +30,14 @@ Profesores y alumnos de la asignatura de Ingeniería de Software.
 7. Cargar ficheros.
 8. Búsqueda de equipo para mostrar integrantes.
 
+1. Añadir alumnos.
+2. Guardar backup de los alumnos.
+3. Cargar backup de los alumnos.
+4. Mostrar alumno.
+5. Modificar alumno.
+6. Eliminar alumno.
+7. Mostrar equipo.
+
 ### REQUISITOS NO FUNCIONALES
 
 >

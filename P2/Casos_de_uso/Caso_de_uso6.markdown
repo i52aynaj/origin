@@ -25,4 +25,5 @@
 
 **Flujos alternativos**:
 
-1. Si no existe el alumno, el sistema muestra un mensaje de error.
+1. Si no existe el alumno, el sistema muestra un mensaje de error y volverá a pedir los datos para buscar al alumno.
+2. Si existen dos alumnos con los mismos apellidos, el sistema pedirá el DNI para diferenciarlos.

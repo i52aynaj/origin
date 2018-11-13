@@ -25,7 +25,7 @@
 
 **Flujos alternativos**:
 
-1. Si el DNI no es único, el sistema muestra un mensaje de error.
-2. Si falta algún campo obligatorio, el sistema muestra un mensaje de error.
+1. Si el DNI no es único, el sistema muestra un mensaje de error y volverá a pedir los datos para añadir al alumno.
+2. Si falta algún campo obligatorio, el sistema muestra un mensaje de error y volverá a pedir los datos para añadir al alumno.
 
 

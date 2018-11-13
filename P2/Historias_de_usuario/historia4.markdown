@@ -11,6 +11,8 @@ Como usuario quiero poder visualizar los datos de un alumno determinado para pod
 ### (REVERSO)
 
 >
+* El alumno debe existir.
 * El alumno a mostrar se podrá buscar por DNI o por apellido y equipo(mínimo).
 * Si el alumno es líder de un equipo, se debe destacar visualmente este campo.
+* La información del alumno se mostrará por línea de comandos o en un fichero en formato Markdown o HTML.
 

@@ -11,5 +11,4 @@ Como usuario quiero poder guardar un backup con la información de los alumnos i
 
 >
 * Los ficheros deben ser de tipo binario.
-* El formato de los fichero podrá ser HTML o Markdown.
 

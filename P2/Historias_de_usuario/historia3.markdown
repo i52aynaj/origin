@@ -10,6 +10,6 @@ Como usuario quiero poder cargar un backup con la información de los alumnos qu
 ### (REVERSO)
 
 >
+* Los ficheros deben existir.
 * Los ficheros deben ser de tipo binario.
-* El formato de los fichero podrá ser HTML o Markdown.
 

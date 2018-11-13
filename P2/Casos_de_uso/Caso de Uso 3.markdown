@@ -23,4 +23,4 @@
 
 **Flujos alternativos**:
 
-1. Si no existe ningún alumno, el fichero no es cargado.
+1. Si no existe ningún alumno(no existe fichero), el sistema mostrará un mensaje de error además de volver al menú de opciones.

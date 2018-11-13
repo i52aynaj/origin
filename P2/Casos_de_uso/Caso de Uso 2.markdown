@@ -23,4 +23,4 @@
 
 **Flujos alternativos**:
 
-1. Si no existe ningún alumno, el sistema muestra un mensaje de error.
+1. Si no existe ningún alumno, el sistema muestra un mensaje de error y volverá a mostrar el menú de opciones.
