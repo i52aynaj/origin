@@ -5,9 +5,9 @@
 - DNI : *string*
 - Nombre : *string*
 - Apellidos : *string*
-- Fecha de nacimiento : *string*
-- Teléfono : *int*
-- Email corporativo : *string*
+- Fecha_nacimiento : *string*
+- Telefono : *int*
+- Email_corporativo : *string*
 - Dirección : *string*
 
 **Métodos**
@@ -26,3 +26,37 @@
 - setTelefono(Telefono : *int*) : *void*
 - setEmail(Email : *string*) : *void*
 - setDireccion(Direccion : *string*) : *void*
+
+###Alumno###
+
+**Atributos**
+
+- Curso : *int*
+- Equipo : *int*
+- Lider : *boolean*
+
+**Métodos**
+
+- getCurso() : *int*
+- getEquipo() : *int*
+- getLider() : *boolean*
+- setCurso(Curso : *int*) : *void*
+- setEquipo(Equipo : *int*) : *void*
+- setLider(Lider : *boolean*) : *boolean*
+
+##Profesor##
+
+**Atributos**
+
+- Asignatura : *string*
+- Rol : *boolean*
+- PrAgenda : *Agenda*\*
+
+**Métodos**
+
+- getAsignatura() : *string*
+- getRol() : *boolean*
+- setAsignatura(Asignatura : *string*) : *void*
+- setRol(Rol : *boolean*) : *boolean* 
+
+**Métodos** 
