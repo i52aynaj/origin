@@ -1,0 +1,28 @@
+###Persona###
+
+**Atributos**
+
+- DNI : *string*
+- Nombre : *string*
+- Apellidos : *string*
+- Fecha de nacimiento : *string*
+- Teléfono : *int*
+- Email corporativo : *string*
+- Dirección : *string*
+
+**Métodos**
+
+- getDNI() : *string*
+- getNombre() : *string*
+- getApellidos() : *string*
+- getFechaNacimiento() : *string*
+- getTelefono() : *int*
+- getEmail() : *string*
+- getDireccion() : *string*
+- setDNI(DNI : *string*) : *void*
+- setNombre(Nombre : *string*) : *void*
+- setApellidos(Apellidos : *string*) : *void*
+- setFechaNacimiento(Fecha *string*) : *void*
+- setTelefono(Telefono : *int*) : *void*
+- setEmail(Email : *string*) : *void*
+- setDireccion(Direccion : *string*) : *void*
