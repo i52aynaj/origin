@@ -1,5 +1,9 @@
 ###Persona###
 
+**Relaciones**
+
+- Persona es una generalización de las clases Alumno y Profesor.
+
 **Atributos**
 
 - DNI : *string*
@@ -29,6 +33,10 @@
 
 ###Alumno###
 
+**Relaciones**
+
+- Alumno es una especialización de la clase Persona.
+
 **Atributos**
 
 - Curso : *int*
@@ -46,6 +54,10 @@
 
 ##Profesor##
 
+**Relaciones**
+
+- Profesor es una especialización de la clase Persona.
+
 **Atributos**
 
 - Asignatura : *string*
@@ -57,6 +69,32 @@
 - getAsignatura() : *string*
 - getRol() : *boolean*
 - setAsignatura(Asignatura : *string*) : *void*
-- setRol(Rol : *boolean*) : *boolean* 
+- setRol(Rol : *boolean*) : *boolean*
+- logIn(Email : *string*, Password : *string*) : *boolean*
+- cargarFichero(nombreFichero : *string*) : *boolean*
+- guardarFichero(nombreFichero : *string*) : *boolean*
+- cargarBackup() : *boolean*
+- guardarBackup() : *boolean*
 
-**Métodos** 
+##Agenda##
+
+**Relaciones**
+
+- Agenda es una agregación de la clase Alumno.
+- 1..* Profesores manejan 1 Agenda.
+
+**Atributos**
+
+- ListaAlumnos : *Alumno[]*
+
+**Métodos**
+
+- getListaAlumnos() : *Alumno[]*
+- setListaAlumnos(ListaAlumnos : *Alumno[]*)
+- getPos(Pos : *int*) : *Alumno*
+- buscarAlumno(DNI : *string*) : *boolean*
+- buscarAlumno(Nombre : *string*, Equipo : *int*) : *boolean*
+- insertarAlumno() : *boolean*
+- modificarAlumno() : *boolean*
+- eliminarAlumno() : *boolean*
+
