@@ -50,7 +50,8 @@
 - getLider() : *boolean*
 - setCurso(Curso : *int*) : *void*
 - setEquipo(Equipo : *int*) : *void*
-- setLider(Lider : *boolean*) : *boolean*
+- darLider() : *void*
+- quitarLider() : *void*
 
 ##Profesor##
 
