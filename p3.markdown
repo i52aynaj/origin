@@ -47,7 +47,7 @@
 
 - getCurso() : *int*
 - getEquipo() : *int*
-- getLider() : *boolean*
+- isLider() : *boolean*
 - setCurso(Curso : *int*) : *void*
 - setEquipo(Equipo : *int*) : *void*
 - darLider() : *void*
@@ -68,7 +68,7 @@
 **Métodos**
 
 - getAsignatura() : *string*
-- getRol() : *boolean*
+- isCoordinador() : *boolean*
 - setAsignatura(Asignatura : *string*) : *void*
 - setRol(Rol : *boolean*) : *boolean*
 - logIn(Email : *string*, Password : *string*) : *boolean*
@@ -94,8 +94,11 @@
 - setListaAlumnos(ListaAlumnos : *Alumno[]*)
 - getPos(Pos : *int*) : *Alumno*
 - buscarAlumno(DNI : *string*) : *boolean*
-- buscarAlumno(Nombre : *string*, Equipo : *int*) : *boolean*
-- insertarAlumno() : *boolean*
+- buscarAlumno(Apellidos : *string*, Equipo : *int*) : *boolean*
+- validacionDatos(Alum : *Alumno*) : *boolean*
+- mostrarAlumno() : *void*
+- insertarAlumno(Alum : *alumno*) : *boolean*
 - modificarAlumno() : *boolean*
 - eliminarAlumno() : *boolean*
+- mostrarEquipo(Equipo : *int*) : *void*
 
