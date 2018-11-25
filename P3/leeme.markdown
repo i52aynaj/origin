@@ -1,4 +1,4 @@
-##Diagramas de clase##
+## Diagramas\ de\ clase ##
 
 **Aclaraciones**
 

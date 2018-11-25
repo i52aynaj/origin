@@ -1,4 +1,4 @@
-###Persona###
+### Persona ###
 
 **Relaciones**
 
@@ -31,7 +31,7 @@
 - setEmail(Email : *string*) : *void*
 - setDireccion(Direccion : *string*) : *void*
 
-###Alumno###
+### Alumno ###
 
 **Relaciones**
 
@@ -53,7 +53,7 @@
 - darLider() : *void*
 - quitarLider() : *void*
 
-##Profesor##
+## Profesor ##
 
 **Relaciones**
 
@@ -77,7 +77,7 @@
 - cargarBackup() : *boolean*
 - guardarBackup() : *boolean*
 
-##Agenda##
+## Agenda ##
 
 **Relaciones**
 
