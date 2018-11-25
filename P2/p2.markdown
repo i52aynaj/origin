@@ -21,14 +21,6 @@ Profesores y alumnos de la asignatura de Ingeniería de Software.
 ### REQUISITOS FUNCIONALES (por orden de prioridad).
 
 >
-1. Añadir alumnos.
-2. Buscar alumnos por nombre o por DNI.
-3. Mostrar Alumnos.
-4. Modificar alumnos.
-5. Eliminar alumnos.
-6. Guardar ficheros.
-7. Cargar ficheros.
-8. Búsqueda de equipo para mostrar integrantes.
 
 1. Añadir alumnos.
 2. Guardar backup de los alumnos.
