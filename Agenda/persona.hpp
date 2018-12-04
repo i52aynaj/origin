@@ -20,23 +20,23 @@ class Persona
 
 		//Observadores
 
-		string getDNI(){return _DNI;}
-		string getNombre(){return _nombre;}
-		string getApellidos(){return _apellidos;}
-		string getNacimiento(){return _fecha_nacimiento;}
-		string getEmail(){return _email;}
-		string getDireccion(){return _direccion;}
-		int getTelefono(){return _telefono;}
+		inline string getDNI(){return _DNI;}
+		inline string getNombre(){return _nombre;}
+		inline string getApellidos(){return _apellidos;}
+		inline string getFechaNacimiento(){return _fecha_nacimiento;}
+		inline string getEmail(){return _email;}
+		inline string getDireccion(){return _direccion;}
+		inline int getTelefono(){return _telefono;}
 
 		//Modificadores
 
-		void setDNI(string DNI){_DNI = DNI;}
-		void setNombre(string nombre){_nombre = nombre;}
-		void setApellidos(string apellidos){_apellidos = apellidos;}
-		void setNacimiento(string fecha_nacimiento){_fecha_nacimiento = fecha_nacimiento;}
-		void setEmail(string email){_email = email;}
-		void setDireccion(string direccion){_direccion = direccion;}
-		void setTelefono(int telefono){_telefono = telefono;}
+		inline void setDNI(string DNI){_DNI = DNI;}
+		inline void setNombre(string nombre){_nombre = nombre;}
+		inline void setApellidos(string apellidos){_apellidos = apellidos;}
+		inline void setFechaNacimiento(string fecha_nacimiento){_fecha_nacimiento = fecha_nacimiento;}
+		inline void setEmail(string email){_email = email;}
+		inline void setDireccion(string direccion){_direccion = direccion;}
+		inline void setTelefono(int telefono){_telefono = telefono;}
 
 
 };
