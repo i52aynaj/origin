@@ -9,6 +9,7 @@
 >
 Como usuario quiero poder añadir alumnos a la base de datos para guardar su información.
 **Prioridad**:1
+**Duración**:2 horas
 
 
 ### (REVERSO)
@@ -29,7 +30,9 @@ Como usuario quiero poder añadir alumnos a la base de datos para guardar su inf
 **ID**:02 **Guardar backup de los alumnos**
 
 >
-Como usuario quiero poder guardar un backup con la información de los alumnos introducidos hasta el momento.**Prioridad**:2
+Como usuario quiero poder guardar un backup con la información de los alumnos introducidos hasta el momento.
+**Prioridad**:2
+**Duración**:2 horas
 
 ### (REVERSO)
 
@@ -43,7 +46,9 @@ Como usuario quiero poder guardar un backup con la información de los alumnos i
 **ID**:03 **Cargar backup de los alumnos**
 
 >
-Como usuario quiero poder cargar un backup con la información de los alumnos que haya guardado previamente.**Prioridad**:3
+Como usuario quiero poder cargar un backup con la información de los alumnos que haya guardado previamente.
+**Prioridad**:3
+**Duración**:2 horas
 
 ### (REVERSO)
 
@@ -60,6 +65,7 @@ Como usuario quiero poder cargar un backup con la información de los alumnos qu
 >
 Como usuario quiero poder visualizar los datos de un alumno determinado para poder ver su información.
 **Prioridad**:4
+**Duración**: 2 horas
 
 ### (REVERSO)
 
@@ -76,7 +82,9 @@ Como usuario quiero poder visualizar los datos de un alumno determinado para pod
 **ID**:05 **Modificar alumno**
 
 >
-Como usuario quiero poder modificar los datos de los alumnos para corregir errores en su información o futuros cambios. **Prioridad**:5
+Como usuario quiero poder modificar los datos de los alumnos para corregir errores en su información o futuros cambios.
+**Prioridad**:5
+**Duración**: 2 horas
 
 ### (REVERSO)
 
@@ -91,7 +99,9 @@ Como usuario quiero poder modificar los datos de los alumnos para corregir error
 **ID**: 06 **Eliminar alumno**
 
 >
-Como usuario deseo tener la posibilidad de eliminar un alumno para eliminar alumnos que ya no están matriculados. **Prioridad**:6
+Como usuario deseo tener la posibilidad de eliminar un alumno para eliminar alumnos que ya no están matriculados.
+**Prioridad**:6
+**Duración**: 2 horas
 
 ### (REVERSO)
 
@@ -107,6 +117,7 @@ Como usuario deseo tener la posibilidad de eliminar un alumno para eliminar alum
 
 >
 Como usuario quiero poder visualizar un equipo para conocer quiénes son sus integrantes. **Prioridad**:7
+**Duración**: 2 horas
 
 ### (REVERSO)
 

@@ -9,6 +9,6 @@ Id | Historia de Usuario | Quien | Estado | Horas totales | Horas empleadas |
 5 | Modificar alumno | Jose Antonio | En proceso | 2 horas| 1 horas
 6 | Eliminar alumno | Enrique | En proceso |2 horas  | 1 horas
 7 | Mostrar equipo | Enrique | En porceso | 2 horas| 0,5 horas
-8 | Product Backlog | Jose Antonio | Realizado | 1 horas | 1 horas
-9 | Sprint Backlog | Jose Antonio | Realizado | 1 horas | 1 horas
-10 | Burdown chart | Jose Antonio | Realizado | 1 horas | 1 horas
+8 | Product Backlog | Jose Antonio | Realizado | 0.3 horas | 0.3 horas
+9 | Sprint Backlog | Jose Antonio | Realizado | 0.4 horas | 0.4 horas
+10 | Burdown chart | Jose Antonio | Realizado | 0.3 horas | 0.3 horas
