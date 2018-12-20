@@ -4,9 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
+#include <string.h>
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include "macros.hpp"
 
 using namespace std;
 
@@ -20,13 +22,13 @@ class Persona
 
 		//Observadores
 
-		inline string getDNI(){return _DNI;}
-		inline string getNombre(){return _nombre;}
-		inline string getApellidos(){return _apellidos;}
-		inline string getFechaNacimiento(){return _fecha_nacimiento;}
-		inline string getEmail(){return _email;}
-		inline string getDireccion(){return _direccion;}
-		inline int getTelefono(){return _telefono;}
+		inline string getDNI() const {return _DNI;}
+		inline string getNombre()const{return _nombre;}
+		inline string getApellidos()const{return _apellidos;}
+		inline string getFechaNacimiento()const{return _fecha_nacimiento;}
+		inline string getEmail()const{return _email;}
+		inline string getDireccion()const{return _direccion;}
+		inline int getTelefono()const{return _telefono;}
 
 		//Modificadores
 

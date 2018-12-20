@@ -13,13 +13,15 @@
 
 int menu();
 
-void mostrarAgenda(Agenda agenda);
+void mostrarAgenda(Agenda &agenda);
 
-void insertarAlumno(Agenda agenda);
+void insertaAlumno(Agenda &agenda);
 
-void eliminarAlumno(Agenda agenda);
+void eliminarAlumno(Agenda &agenda);
 
+void cargar(Agenda &agenda);
 
+void guardar(Agenda &agenda);
 
 
 

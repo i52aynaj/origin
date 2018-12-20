@@ -38,20 +38,61 @@ int main(){
 			//////////////////////////////////////////////////////////////////////////////
 			case 2: 
 					std::cout << "[2]Insertar Alumno" << std::endl;
-					insertarAlumno(agenda);
+					insertaAlumno(agenda);
 					
 				break;
 
 			case 3: 
 					std::cout << "[3]Eliminar Alumno" << std::endl;
 					eliminarAlumno(agenda);
+					std::cin.ignore();
 					break;
 			
 			//////////////////////////////////////////////////////////////////////////////
-			
+			case 4: 
+					std::cout << "[4]Cargar Backups" << std::endl;
+					cargar(agenda);
+					std::cin.ignore();
+					
+				break;
 					
 
 			//////////////////////////////////////////////////////////////////////////////
+			case 5: 
+					std::cout << "[5]Guardar Backups" << std::endl;
+					guardar(agenda);
+					
+					
+				break;
+					
+
+			//////////////////////////////////////////////////////////////////////////////
+			case 6: 
+					std::cout << "[6]Mostrar Alumno" << std::endl;
+					
+					
+				break;
+					
+
+			//////////////////////////////////////////////////////////////////////////////
+			case 7: 
+					std::cout << "[7]Mostrar Equipo" << std::endl;
+					
+					
+				break;
+					
+
+			//////////////////////////////////////////////////////////////////////////////
+			case 8: 
+					std::cout << "[8]Modificar Alumno" << std::endl;
+					
+					
+				break;
+					
+
+			//////////////////////////////////////////////////////////////////////////////
+			
+			
 			default:
 				std::cout << BIRED;
 				std::cout << "Opción incorrecta ";

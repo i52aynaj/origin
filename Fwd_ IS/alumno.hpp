@@ -15,9 +15,10 @@ class Alumno : public Persona{
 
 		//Observadores
 
-		inline int getCurso(){return _curso;}
-		inline int getEquipo(){return _curso;}
-		inline bool isLider(){return _lider;}
+		inline int getCurso() const {return _curso;}
+		inline int getEquipo() const {return _curso;}
+		inline bool getLider() const {return _lider;};
+		inline bool isLider() const {return _lider;}
 
 		//Modificadores
 

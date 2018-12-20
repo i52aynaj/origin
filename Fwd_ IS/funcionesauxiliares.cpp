@@ -11,6 +11,7 @@
 #include <string>
 #include "funcionesauxiliares.hpp"
 #include "macros.hpp"
+
 using namespace std;
 int menu()
 {
@@ -39,9 +40,40 @@ int menu()
 
 	PLACE(posicion++,10);
 	cout << "[2]Insertar Alumno";
-
+	
+	posicion++;
+	
+	
 	PLACE(posicion++,10);
 	cout << "[3]Eliminar Alumno";
+	
+	posicion++;
+
+	PLACE(posicion++,10);
+	cout <<  "[4]CargarBackup";
+
+	//////////////////////////////////////////////////////////////////////////////
+	posicion++;
+
+	PLACE(posicion++,10);
+	cout << "[5]GuardarBackup";
+	
+	posicion++;
+	
+	
+	PLACE(posicion++,10);
+	cout << "[6]Mostrar Alumno";
+	
+	posicion++;
+
+	PLACE(posicion++,10);
+	cout << "[7]Mostrar Equipo";
+	
+	posicion++;
+	
+	
+	PLACE(posicion++,10);
+	cout << "[8]Modificar Alumno";
 	
 	
 	
@@ -63,7 +95,7 @@ int menu()
 	return opcion;
 }
 
-void mostrarAgenda(Agenda agenda){
+void mostrarAgenda(Agenda &agenda){
 	if(agenda.isVacia()==true) {
 		cout<<"LISTA VACIA"<<endl;
 		return;
@@ -72,66 +104,95 @@ void mostrarAgenda(Agenda agenda){
 		agenda.mostrarAlumno(agenda.getListaAlumnos().at(i));
 	}
 }
-void insertarAlumno(Agenda agenda){
+void insertaAlumno(Agenda &agenda){
 	Alumno alumno;
 	string cadena;
-	int numero;
 	bool lider;
+	
 	cout<<"Introduce el DNI: "<<endl;
-	cin>>cadena;
+	getline(cin,cadena);
 	alumno.setDNI(cadena);
+	
 	cout<<"Introduce el Nombre: "<<endl;
-	cin>>cadena;
+	getline(cin,cadena);
 	alumno.setNombre(cadena);
+	
+	
+	
 	cout<<"Introduce los Apellidos: "<<endl;
-	cin>>cadena;
+	getline(cin,cadena);
 	alumno.setApellidos(cadena);
+	
+	
 	cout<<"Introduce la Fecha de Nacimiento: "<<endl;
-	cin>>cadena;
+	getline(cin,cadena);
 	alumno.setFechaNacimiento(cadena);
+	
+	
 	cout<<"Introduce el Email"<<endl;
-	cin>>cadena;
+	getline(cin,cadena);
 	alumno.setEmail(cadena);
+	
+	
 	cout<<"Introduce la Direccion: "<<endl;
-	cin>>cadena;
+	getline(cin, cadena);
 	alumno.setDireccion(cadena);
+	
+	
 	cout<<"Introduce el telefono: "<<endl;
-	cin>>numero;
-	alumno.setTelefono(numero);
+	getline(cin,cadena);
+	alumno.setTelefono(atoi(cadena.c_str()));
+	
+	
 	cout<<"Introduce el curso: "<<endl;
-	cin>>numero;
-	alumno.setCurso(numero);
+	getline(cin,cadena);
+	alumno.setCurso(atoi(cadena.c_str()));
+	
+	
 	cout<<"Introduce el Equipo: "<<endl;
-	cin>>numero;
-	alumno.setEquipo(numero);
+	getline(cin,cadena);
+	alumno.setEquipo(atoi(cadena.c_str()));
+	
+	
 	cout<<"Introduce 'Si' en caso de que sea lider o 'No' en caso contrario"<<endl;
 	cin>>cadena;
+	
+	
 	if(cadena=="Si"){lider=true;}else{lider=false;}
 	alumno.setLider(lider);
 	if(agenda.validacionDatos(alumno)){
-		agenda.insertarAlumno(alumno);}
+		
+		agenda.insertarAlumno(alumno);
+		cout<<agenda.getListaAlumnos().size()<<endl;
+	}
 	else{
 		cout<<"ERROR: Datos Errones."<<endl;
 		cout<<"Introduce de nuevo los Datos."<<endl;
-		insertarAlumno(agenda);
+		insertaAlumno(agenda);
 	}
 }
-void eliminarAlumno(Agenda agenda){
+void eliminarAlumno(Agenda &agenda){
 	if(agenda.isVacia()){
 		cout<<"LA AGENDA SE ENCUENTRA VACIA"<<endl;
 		return ;
 	}	
-	int numero;	
+	
+	string cadena1;	
 	string cadena;
-	cout<<"Introduce una opcion: "<<endl;
-	cout<<"[1]Eliminar por DNI"<<endl;
-	cout<<"[2]Eliminar por Apellidos y Equipo"<<endl;
-	cin>>numero;
+	int numero;
+	
+	cout<< BIGREEN <<  "Introduce una opcion: " << RESET << endl<<endl;
+	cout<< BIYELLOW << "[1]Eliminar por DNI" << RESET <<endl;
+	cout<< BIYELLOW << "[2]Eliminar por Apellidos y Equipo" << RESET <<endl;
+	getline(cin, cadena);
+	numero=atoi(cadena.c_str());
+	
 	if(numero==1){
+	
 		cout<<"Introduzca el DNI: "<<endl;
-		cin>>cadena;
+		getline(cin, cadena);
 		if((numero=agenda.buscarAlumno(cadena))!=-1){
-			if(agenda.eliminarAlumno(numero)){cout<<"ELIMINADO CON EXITO"<<endl;return ;}
+			if(agenda.eliminarAlumno(numero)){cout<< BIGREEN << "ELIMINADO CON EXITO"<< RESET << endl;}
 			else{cout<<"ERROR AL ELIMINAR USUARIO"<<endl;}
 		}
 		else{
@@ -139,15 +200,21 @@ void eliminarAlumno(Agenda agenda){
 		}
 		}
 		else if(numero==2){
-			cout<<"Introduca los apellidos: "<<endl;
-			cin>>cadena;
-			cout<<"Intorduzca el equipo: "<<endl;
-			cin>>numero;
+			cout<<"Introduzca los apellidos: "<<endl;
+			getline(cin, cadena);
+			cout << "cadena: " << cadena << endl;
+			
+			
+			cout<<"Introduzca el equipo: "<<endl;
+			getline(cin, cadena1);
+			numero = atoi(cadena1.c_str());
+			
+			cout << "cadena: " << numero << endl;
 			if((numero=agenda.buscarAlumno(cadena,numero))==-2){
 				cout<<"Debe buscar por DNI: "<<endl;
 				cin>>cadena;
 				if((numero=agenda.buscarAlumno(cadena))!=-1){
-					if(agenda.eliminarAlumno(numero)){cout<<"ELIMINADO CON EXITO"<<endl;return; }
+					if(agenda.eliminarAlumno(numero)){cout<<"ELIMINADO CON EXITO"<<endl;}
 					else{cout<<"ERROR AL ELIMINAR USUARIO"<<endl;}
 				}
 				else{
@@ -169,5 +236,22 @@ void eliminarAlumno(Agenda agenda){
 		else{
 			cout<<"OPCION INVALIDA"<<endl;
 		}
-
 }
+
+void cargar(Agenda &agenda){
+	string cadena;
+	cout<<"Introduzca el nombre del fichero: "<<endl;
+	cin>>cadena;
+	
+	agenda.cargarBackup(cadena);
+}
+void guardar(Agenda &agenda){
+	string cadena;
+	cout<<"Introduzca el nombre del fichero: "<<endl;
+	cin>>cadena;
+	agenda.guardarBackup(cadena);
+}
+
+
+
+
