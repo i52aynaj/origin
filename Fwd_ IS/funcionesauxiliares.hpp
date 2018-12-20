@@ -23,6 +23,8 @@ void cargar(Agenda &agenda);
 
 void guardar(Agenda &agenda);
 
+void mostrarAlumno(Agenda &agenda);
+
 
 
 

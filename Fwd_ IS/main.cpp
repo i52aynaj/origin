@@ -26,27 +26,27 @@ int main(){
 					std::cout << RESET;
 			break;
 
-		   ///////////////////////////////////////////////////////////////////
+		  	///////////////////////////////////////////////////////////////////
 
 			case 1: 
 					std::cout << "[1]Listar Agenda" << std::endl;
 					mostrarAgenda(agenda);
-					
-					 
-					break;
+				
+			break;
 
 			//////////////////////////////////////////////////////////////////////////////
 			case 2: 
 					std::cout << "[2]Insertar Alumno" << std::endl;
 					insertaAlumno(agenda);
 					
-				break;
-
+			break;
+			
+			//////////////////////////////////////////////////////////////////////////////
 			case 3: 
 					std::cout << "[3]Eliminar Alumno" << std::endl;
 					eliminarAlumno(agenda);
 					std::cin.ignore();
-					break;
+			break;
 			
 			//////////////////////////////////////////////////////////////////////////////
 			case 4: 
@@ -54,7 +54,7 @@ int main(){
 					cargar(agenda);
 					std::cin.ignore();
 					
-				break;
+			break;
 					
 
 			//////////////////////////////////////////////////////////////////////////////
@@ -63,15 +63,15 @@ int main(){
 					guardar(agenda);
 					
 					
-				break;
+			break;
 					
 
 			//////////////////////////////////////////////////////////////////////////////
 			case 6: 
 					std::cout << "[6]Mostrar Alumno" << std::endl;
+					mostrarAlumno(agenda);
 					
-					
-				break;
+			break;
 					
 
 			//////////////////////////////////////////////////////////////////////////////
@@ -79,7 +79,7 @@ int main(){
 					std::cout << "[7]Mostrar Equipo" << std::endl;
 					
 					
-				break;
+			break;
 					
 
 			//////////////////////////////////////////////////////////////////////////////
@@ -87,7 +87,7 @@ int main(){
 					std::cout << "[8]Modificar Alumno" << std::endl;
 					
 					
-				break;
+			break;
 					
 
 			//////////////////////////////////////////////////////////////////////////////

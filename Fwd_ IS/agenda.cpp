@@ -19,12 +19,8 @@ int Agenda::buscarAlumno(string apellidos, int equipo){
 int aux=0;
 int cont=0;
 	for(int i=0; i<getListaAlumnos().size();i++){
-		cout << _listaAlumnos.at(i).getApellidos() << endl;
-		cout << _listaAlumnos.at(i).getEquipo() << endl << endl;
-		cout << apellidos << endl;
-		cout << equipo << endl;
+		
 		if((_listaAlumnos.at(i).getApellidos()==apellidos)and(_listaAlumnos.at(i).getEquipo()==equipo)){
-			cout << "entra"<<endl;
 			cont++;
 			aux=i;
 		}
@@ -54,9 +50,7 @@ bool Agenda::validacionDatos(Alumno alumno){
 }
 bool Agenda::insertarAlumno(Alumno alumno){
 	if(validacionDatos(alumno)){
-	cout<<alumno.getDNI()<<endl;
 		_listaAlumnos.push_back(alumno);
-		cout<<_listaAlumnos.size()<<endl;
 		return true;
 	}
 	else{return false;}
@@ -131,57 +125,51 @@ bool Agenda::cargarBackup(string nombre){
 	std::ifstream fich(nombre.c_str());
 	
 		if(fich.is_open()){
-		while(fich.getline(dato,256,';'))
-			{
-			cout<<"entro"<<endl;	
+			while(fich.getline(dato,256,';')){	
+					
+				dato1=dato;
+				alumno.setDNI(dato1);
+					
+				fich.getline(dato, 256,';');
+				dato1=dato;
+				alumno.setNombre(dato1);
 				
-			
-			
-			dato1=dato;
-			alumno.setDNI(dato1);
+				fich.getline(dato, 256,';');
+				dato1=dato;
+				alumno.setApellidos(dato1);
 				
-			fich.getline(dato, 256,';');
-			dato1=dato;
-			alumno.setNombre(dato1);
-			
-			fich.getline(dato, 256,';');
-			dato1=dato;
-			alumno.setApellidos(dato1);
-			
-			fich.getline(dato, 256,';');
-			dato1=dato;
-			alumno.setFechaNacimiento(dato1);
-			
-			fich.getline(dato, 256,';');
-			dato1=dato;
-			alumno.setEmail(dato1);
-			
-			fich.getline(dato, 256,';');
-			dato1=dato;
-			alumno.setDireccion(dato1);
-			
-			fich.getline(dato, 256,';');
-			alumno.setTelefono(atoi(dato));
-			
-			fich.getline(dato, 256,';');
-			alumno.setCurso(atoi(dato));
-			fich.getline(dato, 256,';');
-			alumno.setEquipo(atoi(dato));
-			
-			fich.getline(dato, 256,'\n');
-			
-			if(strcmp(dato,"1")){
-				alumno.setLider(true);
-			}
-			else{
-				alumno.setLider(false);
-			}
-			cout<<dato<<endl;
-			insertarAlumno(alumno);
-			}
-			
-			
-		
+				fich.getline(dato, 256,';');
+				dato1=dato;
+				alumno.setFechaNacimiento(dato1);
+				
+				fich.getline(dato, 256,';');
+				dato1=dato;
+				alumno.setEmail(dato1);
+				
+				fich.getline(dato, 256,';');
+				dato1=dato;
+				alumno.setDireccion(dato1);
+				
+				fich.getline(dato, 256,';');
+				alumno.setTelefono(atoi(dato));
+				
+				fich.getline(dato, 256,';');
+				alumno.setCurso(atoi(dato));
+				fich.getline(dato, 256,';');
+				alumno.setEquipo(atoi(dato));
+				
+				fich.getline(dato, 256,'\n');
+				
+				if(strcmp(dato,"1")){
+					alumno.setLider(true);
+				}
+				else{
+					alumno.setLider(false);
+				}
+				
+				insertarAlumno(alumno);
+				
+				}
 		}
 		else{
 			std::cout << BIRED <<"No se ha podido abrir el fichero"  << RESET <<std::endl;
@@ -190,8 +178,6 @@ bool Agenda::cargarBackup(string nombre){
 		
 	fich.close();
 	return true;
-
-
 }
 	
 	
