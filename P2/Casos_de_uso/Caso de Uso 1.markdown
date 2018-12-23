@@ -17,7 +17,9 @@
 **Flujo principal**:
 
 1. El caso de uso empieza cuando el usuario necesita introducir un alumno.
-2. El alumno es añadido a la base de datos.
+2. El usuario selecciona la opción en el menú principal.
+3. El usuario introduce los datos necesarios para añadir al alumno.
+4. El alumno es añadido a la base de datos.
 
 **Postcondiciones**:
 
@@ -25,7 +27,6 @@
 
 **Flujos alternativos**:
 
-1. Si el DNI no es único, el sistema muestra un mensaje de error y volverá a pedir los datos para añadir al alumno.
-2. Si falta algún campo obligatorio, el sistema muestra un mensaje de error y volverá a pedir los datos para añadir al alumno.
+3.1 Si el DNI no es único o falta alguno de los datos necesarios mínimos para añadir un alumno, el sistema muestra un mensaje de error y volverá a pedir los datos para añadir al alumno.
 
 

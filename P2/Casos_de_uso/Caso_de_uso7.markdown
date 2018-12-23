@@ -17,13 +17,17 @@
 **Flujo principal**:
 
 1. El caso de uso empieza cuando el usuario necesita mostrar un equipo.
-2. El sistema recoge los datos del equipo.
+2. El usuario selecciona la opción en el menú.
+3. El usuario indica el número del grupo que desea visualizar.
+4. El usuario elige el modo de visualización.
+5. El sistema muestra los datos de los componentes del equipo.
+
 
 **Postcondiciones**:
 
-* El sistema muestra los datos de un equipo por pantalla. 
+* El sistema muestra los datos de un equipo en consola o en un fichero HTML/Markdown. 
 
 **Flujos alternativos**:
 
-1. Si no existe el equipo, el sistema muestra un mensaje de error y volverá a pedir el número de equipo.
+3.1 Si no existe el equipo, el sistema muestra un mensaje de error y volverá a pedir el número de equipo.
 

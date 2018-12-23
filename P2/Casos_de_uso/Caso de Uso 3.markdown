@@ -16,6 +16,8 @@
 **Flujo principal**:
 
 1. El caso de uso empieza cuando el usuario quiere cargar un backups de los alumnos.
+2. El sistema comprueba si el usuario tiene permiso para ejecutar esta operación.
+3. El backup es cargado.
 
 **Postcondiciones**:
 
@@ -23,4 +25,5 @@
 
 **Flujos alternativos**:
 
-1. Si no existe ningún alumno(no existe fichero), el sistema mostrará un mensaje de error además de volver al menú de opciones.
+1.1 Si no existe ningún alumno(no existe fichero), el sistema muestra un mensaje de error y volverá a mostrar el menú principal.
+2.1 Si el usuario no tiene permiso, el sistema lo indicará en un mensaje de error y volverá al menú principal.
