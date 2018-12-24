@@ -9,6 +9,7 @@
 #include "alumno.hpp"
 #include "persona.hpp"
 #include "macros.hpp"
+#include "profesor.hpp"
 
 
 int menu();
@@ -23,9 +24,13 @@ void cargar(Agenda &agenda);
 
 void guardar(Agenda &agenda);
 
+void mostrarEquipo(Agenda &agenda);
+
+void modificar(Agenda &agenda);
+
 void mostrarAlumno(Agenda &agenda);
 
-
+void loGin(Profesor &p);
 
 
 
