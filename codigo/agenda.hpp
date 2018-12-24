@@ -33,6 +33,8 @@ class Agenda{
 		void mostrarAlumno(Alumno alumno);
 		bool guardarBackup(string nombre);
 		bool cargarBackup(string nombre);
+		void mostrarEquipo(int numero);
+		
 };
 
 #endif

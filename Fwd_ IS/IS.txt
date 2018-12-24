@@ -1,3 +1,0 @@
-31016060P;Antonio;Ariza Garcia;10/07/1991;antonio_aariza@hotmail.com;Vega 25;696517618;3;3;1
-80167608G;Enrique;Galan Galan;31/03/1998;kike98gg@gmail.com;Sebastian Garrido nº35;665122721;3;3;0
-11111111A;Raul;Ariza Garcia;10/07/1992;raulito@hotmail.com;Vega 25;123123123;1;1;0
