@@ -38,26 +38,19 @@ int main(){
 			//////////////////////////////////////////////////////////////////////////////
 			case 2: 
 					std::cout << "[2]Insertar Alumno" << std::endl;
-					if(p.getRol()){
-					
 					insertaAlumno(agenda);
-					}
-					else{
-						std::cout<<BIRED<<"Solo Coordinadores. Inicie Sesión"<<RESET<<std::endl;
-					}
-					
 					
 				break;
 
 			case 3: 
 					std::cout << "[3]Eliminar Alumno" << std::endl;
 					if(p.getRol()){
-					eliminarAlumno(agenda);
+						eliminarAlumno(agenda);
 					}
 					else{
-					std::cout<<BIRED<<"Solo Coordinadores. Inicie Sesión"<<RESET<<std::endl;
+						std::cout<<BIRED<<"Solo Coordinadores. Inicie Sesión"<<RESET<<std::endl;
 					}
-					std::cin.ignore();
+						std::cin.ignore();
 					break;
 			
 			//////////////////////////////////////////////////////////////////////////////
@@ -73,9 +66,15 @@ int main(){
 			//////////////////////////////////////////////////////////////////////////////
 			case 5: 
 					std::cout << "[5]Guardar Backups" << std::endl;
-					guardar(agenda);
+					if(p.getRol()){
 					
+						guardar(agenda);
+					}
+					else{
+						std::cout<<BIRED<<"Solo Coordinadores. Inicie Sesión"<<RESET<<std::endl;
+					}
 					
+					std::cin.ignore();
 				break;
 					
 

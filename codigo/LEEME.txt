@@ -1,0 +1,3 @@
+COMPILAR:
+
+g++ main.cpp funcionesauxiliares.cpp agenda.cpp alumno.cpp persona.cpp 
